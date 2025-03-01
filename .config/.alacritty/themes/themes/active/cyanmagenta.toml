@@ -1,0 +1,36 @@
+[window]
+opacity = 0.55
+#default value is 0.65
+
+# Colors (Custom -sam)
+
+# Default colors
+[colors.primary]
+background = '#000000'
+foreground = '#ffffff'
+
+[colors.cursor]
+text = '#F81CE5'
+cursor = '#ffffff'
+
+# Normal colors
+[colors.normal]
+black   = '#000000'
+red     = '#ff1313'
+green   = '#0080ff'
+yellow  = '#ff0080'
+blue    = '#0044ff'
+magenta = '#cc00ff'
+cyan    = '#00ffff'
+white   = '#d0d0d0'
+
+# Bright colors
+[colors.bright]
+black   = '#808080'
+red     = '#ff1313'
+green   = '#0080ff'
+yellow  = '#ff0080'
+blue    = '#0044ff'
+magenta = '#cc00ff'
+cyan    = '#00ffff'
+white   = '#FFFFFF'
