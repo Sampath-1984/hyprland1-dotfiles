@@ -4,3 +4,6 @@ This repository contains the necessary dotfiles required for replicating my curr
 
 *.themes, .icons, and a list of dependencies need to be updated here
 *missing important files like(themes and icons)
+
+![Desktop](images/hyprland.png)
+![Lockscreen](images/hyprlock.png)
