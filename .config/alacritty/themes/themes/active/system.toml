@@ -1,0 +1,83 @@
+[font]
+size = 11
+normal = { family = "Monego Nerd Font Fix", style = "Regular" }
+
+[window]
+opacity = 1
+
+# Colors (Greyscale-light)
+# Default colors
+[colors.primary]
+background = '#ffffff'
+foreground = '#000000'
+
+# Colors the cursor will use if `custom_cursor_colors` is true
+[colors.cursor]
+text = '#000000'
+cursor = '#000000'
+
+## Normal colors
+#[colors.normal]
+#black   = '#222222'
+#red     = '#444444'
+#green   = '#555555'
+#yellow  = '#777777'
+#blue    = '#999999'
+#magenta = '#bbbbbb'
+#cyan    = '#dddddd'
+#white   = '#ffffff'
+#
+## Bright colors
+#[colors.bright]
+#black   = '#222222'
+#red     = '#444444'
+#green   = '#555555'
+#yellow  = '#777777'
+#blue    = '#999999'
+#magenta = '#bbbbbb'
+#cyan    = '#dddddd'
+#white   = '#ffffff'
+
+## Normal colors
+#[colors.normal]
+#black   = '#101010'
+#red     = '#252525'
+#green   = '#464646'
+#yellow  = '#525252'
+#blue    = '#2a2a2a'
+#magenta = '#b9b9b9'
+#cyan    = '#e3e3e3'
+#white   = '#f7f7f7'
+#
+## Bright colors
+#[colors.bright]
+#black   = '#7c7c7c'
+#red     = '#999999'
+#green   = '#a0a0a0'
+#yellow  = '#8e8e8e'
+#blue    = '#333333'
+#magenta = '#686868'
+#cyan    = '#747474'
+#white   = '#5e5e5e'
+
+# Normal colors
+[colors.normal]
+black   = '#000000'
+red     = '#222222'
+green   = '#555555'
+yellow  = '#666666'
+blue    = '#777777'
+magenta = '#888888'
+cyan    = '#999999'
+white   = '#aaaaaa'
+
+# Bright colors
+[colors.bright]
+black   = '#222222'
+red     = '#444444'
+green   = '#555555'
+yellow  = '#777777'
+blue    = '#999999'
+magenta = '#aaaaaa'
+cyan    = '#bbbbbb'
+white   = '#cccccc'

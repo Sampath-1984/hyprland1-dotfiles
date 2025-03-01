@@ -1,0 +1,5 @@
+[general]
+import = [
+"~/.config/alacritty/config.toml",
+"~/.config/alacritty/themes/themes/active/step.toml",
+]
