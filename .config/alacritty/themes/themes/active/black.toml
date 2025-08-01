@@ -13,57 +13,24 @@ foreground = '#ffffff'
 text = '#000000'
 cursor = '#ffffff'
 
-## Normal colors
-#[colors.normal]
-#black   = '#222222'
-#red     = '#444444'
-#green   = '#555555'
-#yellow  = '#777777'
-#blue    = '#999999'
-#magenta = '#bbbbbb'
-#cyan    = '#dddddd'
-#white   = '#ffffff'
-#
-## Bright colors
-#[colors.bright]
-#black   = '#222222'
-#red     = '#444444'
-#green   = '#555555'
-#yellow  = '#777777'
-#blue    = '#999999'
-#magenta = '#bbbbbb'
-#cyan    = '#dddddd'
-#white   = '#ffffff'
-
-# Normal colors
-#[colors.normal]
-#black   = '#101010'
-#red     = '#252525'
-#green   = '#464646'
-#yellow  = '#525252'
-#blue    = '#2a2a2a'
-#magenta = '#b9b9b9'
-#cyan    = '#e3e3e3'
-#white   = '#f7f7f7'
-
 #Normal colors
 [colors.normal]
-black   = '#7c7c7c'
-red     = '#555555'
-green   = '#a0a0a0'
-yellow  = '#8e8e8e'
-blue    = '#333333'
-magenta = '#686868'
-cyan    = '#747474'
-white   = '#5e5e5e'
+black   = '#333333'
+red     = '#444444'
+green   = '#777777'
+yellow  = '#999999'
+blue    = '#aaaaaa'
+magenta = '#cccccc'
+cyan    = '#eeeeee'
+white   = '#ffffff'
 
 # Bright colors
 [colors.bright]
-black   = '#7c7c7c'
-red     = '#555555'
-green   = '#a0a0a0'
-yellow  = '#8e8e8e'
-blue    = '#333333'
-magenta = '#686868'
-cyan    = '#747474'
-white   = '#5e5e5e'
+black   = '#333333'
+red     = '#444444'
+green   = '#777777'
+yellow  = '#999999'
+blue    = '#aaaaaa'
+magenta = '#cccccc'
+cyan    = '#eeeeee'
+white   = '#ffffff'

@@ -2,7 +2,6 @@ name=light
 index=6
 gtk_theme=Flat-Remix-GTK-Grey-Light-Solid
 icon_theme=Flat-Remix-Grey-Light-darkPanel
-#wall=arch
 wall=arch-min
 waybar=style
 swaync=style

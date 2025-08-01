@@ -126,7 +126,7 @@ button:hover {
 #clock {
     background-color: alpha(@theme_bg_color, 0);
     color: @theme_text_color;
-    font-family: 'JetBrains Mono Nerd';
+    font-family: 'Monospace';
     /*box-shadow: inset -2px 0px @theme_selected_bg_color;
     */border-radius: 2px;
 }
@@ -253,4 +253,8 @@ label:focus {
 
 #custom-media {
   font-family: "NotoSansMono Nerd Font";
+}
+
+#mpris {
+  font-family: "URW Gothic";
 }

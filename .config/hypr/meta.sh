@@ -7,12 +7,12 @@ source ~/.config/hypr/mythemes/$var.sh
 echo $name > /var/tmp/switch.txt &
 gsettings set org.gnome.desktop.interface gtk-theme $gtk_theme &
 gsettings set org.gnome.desktop.interface icon-theme $icon_theme &
-swww img ~/Pictures/Wallpapers/active/$wall.png --transition-type any &
-killall waybar && sleep 0.5 &
-sleep 0.3 && waybar -s ~/.config/waybar/$waybar.css &
+swww img ~/Pictures/Wallpapers/active/$var/$wall.png --transition-type any &
+hypr_waybar &
 set_fonts &
 hypr-dock &
 hypr-colors &
+hypr_gapssettings &
 alacritty &
 hyprctl reload &
 killall swaync && sleep 0.5 &
@@ -70,6 +70,29 @@ echo \$shadow.offset=$shadow_offset >> ~/.config/hypr/myhyprcolors.conf
 echo \$fg.color=$fg_color >> ~/.config/hypr/myhyprcolors.conf
 echo \$bg.color=$bg_color >> ~/.config/hypr/myhyprcolors.conf
 echo \$txt.color=$txt_color >> ~/.config/hypr/myhyprcolors.conf
+
+}
+
+function hypr_gapssettings(){
+if ( [ -f /var/tmp/bar.txt ] && [ -n "$(cat /var/tmp/bar.txt)" ] );
+	then
+	barv=$(cat /var/tmp/bar.txt)
+else
+	barv="left"
+fi
+
+if [ $barv == "top" ];
+	then
+	echo \$round=0 > ~/.config/hypr/myhyprsettings.conf
+	echo \$shadow.range=0 >> ~/.config/hypr/myhyprsettings.conf
+	echo \$shadow.render_power=0 >> ~/.config/hypr/myhyprsettings.conf
+	echo \$shadow.offset=0 0 >> ~/.config/hypr/myhyprsettings.conf
+	echo \$gaps.in=0 >> ~/.config/hypr/myhyprsettings.conf
+	echo \$gaps.out=0 >> ~/.config/hypr/myhyprsettings.conf
+else
+	echo \$gaps.in=5 > ~/.config/hypr/myhyprsettings.conf
+	echo \$gaps.out=10 >> ~/.config/hypr/myhyprsettings.conf
+fi
 }
 
 function hypr-dock(){
@@ -85,15 +108,38 @@ killall nwg-dock-hyprland
 #fi
 }
 
+function hypr_waybar(){
+killall waybar && sleep 0.5 &
+if ( [ -f /var/tmp/bar.txt ] && [ -n "$(cat /var/tmp/bar.txt)" ] );
+	then
+	varbar=$(cat /var/tmp/bar.txt)
+	if [ $varbar == "left" ];
+		then
+		varb=""
+	elif [ $varbar == "top" ];
+		then 
+		varb="-top"
+	else
+		echo left > /var/tmp/bar.txt
+		varb=""
+	fi
+else
+	echo left > /var/tmp/bar.txt
+	varb=""
+fi
+#echo $varb
+sleep 0.3 && waybar -c ~/.config/waybar/config$varb.jsonc -s ~/.config/waybar/$waybar$varb.css &
+}
+
 function hypr_top(){
 lvar=$1
 killall nwg-dock-hyprland
 killall waybar
 sleep 0.3
 if [ $lvar == "alt" ];then
-	waybar -c ~/.config/waybar/top-config.jsonc -s ~/.config/waybar/opaque-style-top.css &
+	waybar -c ~/.config/waybar/config-top.jsonc -s ~/.config/waybar/opaque-style-top.css &
 else
-	waybar -c ~/.config/waybar/top-config.jsonc -s ~/.config/waybar/transparent-style.css &
+	waybar -c ~/.config/waybar/config-top.jsonc -s ~/.config/waybar/transparent-style.css &
 fi
 nwg-dock-hyprland -i 33 -d -hd 0 -p bottom -c 'wofi --show drun -I -m -W 425' -ico edit-find &
 }

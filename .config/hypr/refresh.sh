@@ -2,7 +2,7 @@
 #this script was made for reloading or refreshing the currently applies theme
 var=$(cat /var/tmp/switch.txt)
 source ~/.config/hypr/meta.sh
-echo $var
+#echo $var
 #if [[ $var -eq 0 ]]; then
 #	filee=wmaker
 #elif [[ $var -eq 1 ]]; then

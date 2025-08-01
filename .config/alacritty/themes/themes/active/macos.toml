@@ -1,4 +1,8 @@
 # Colors (iTerm 2 default theme)
+
+[window]
+opacity = 0.85
+
 # Default colors
 [colors.primary]
 background = '#101421'

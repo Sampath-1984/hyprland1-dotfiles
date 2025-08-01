@@ -10,7 +10,7 @@ normal = { family = "Fixedsys62", style = "Regular" }
 # Default colors
 [colors.primary]
 background = '#000000'
-foreground = '#00ff00'
+foreground = '#0caf05'
 
 # Colors the cursor will use if `custom_cursor_colors` is true
 [colors.cursor]
@@ -19,22 +19,22 @@ cursor = '#00ff00'
 
 # Normal colors
 [colors.normal]
-black   = '#000000'
-red     = '#00ff00'
+black   = '#001E00'
+red     = '#003400'
 green   = '#00ff00'
-yellow  = '#00ff00'
-blue    = '#00ff00'
-magenta = '#00ff00'
-cyan    = '#00ff00'
-white   = '#00ff00'
+yellow  = '#00FF4F'
+blue    = '#00B14F'
+magenta = '#008800'
+cyan    = '#00EC64'
+white   = '#00FF39'
 
 # Bright colors
 [colors.bright]
-black   = '#000000'
-red     = '#00ff00'
+black   = '#001E00'
+red     = '#003400'
 green   = '#00ff00'
-yellow  = '#00ff00'
-blue    = '#00ff00'
-magenta = '#00ff00'
-cyan    = '#00ff00'
-white   = '#00ff00'
+yellow  = '#00FF4F'
+blue    = '#00B14F'
+magenta = '#008800'
+cyan    = '#00EC64'
+white   = '#00FF39'

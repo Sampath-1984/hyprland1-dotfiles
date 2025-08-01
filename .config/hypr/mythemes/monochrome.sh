@@ -1,10 +1,8 @@
 name=monochrome
 index=5
 gtk_theme=Flat-Remix-GTK-Grey-Darkest-Solid
-#icon_theme=Flat-Remix-Grey-Light-darkPanel
 icon_theme=Papirus-Dark-Grey
-#wall=shore
-wall=mountains
+wall=arch-dark
 waybar=opaque-style
 swaync=style
 color="rgba(73767faa)"

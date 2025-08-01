@@ -1,6 +1,6 @@
 // -*- mode: jsonc -*-
 {
-      "layer": "bottom", // Waybar at top layer (top|bottom)
+      "layer": "top", // Waybar at top layer (top|bottom)
 //    "position": "bottom", // Waybar position (top|bottom|left|right)
       "position": "left",
 //    "height": 30, // Waybar height (to be removed for auto height)
@@ -322,7 +322,7 @@
         "format": "{icon}",
         //"format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{icon}",
-        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-bluetooth-muted": "󰟎",
 //        "format-muted": "",
 	"format-muted": "󰝟",
         "format-source": "{volume}% ",
